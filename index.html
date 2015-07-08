@@ -85,7 +85,6 @@
 			</div>
 		</div>
 		<div class="container">
-
 		<div class="row">
 			<div class="col-lg-2 col-lg-offset-5">
 				<hr class="marginbot-50">
@@ -97,7 +96,7 @@
                 <div class="team boxed-grey">
                     <div class="inner">
 						<h5>Alexander Gurung</h5>
-                        <p class="subtitle">Person</p>
+                        <p class="subtitle">TJHSST</p>
                     </div>
                 </div>
 				</div>
@@ -106,8 +105,8 @@
 				<div class="wow bounceInUp" data-wow-delay="0.5s">
                 <div class="team boxed-grey">
                     <div class="inner">
-						<h5>Sachin Jain</h5>
-                        <p class="subtitle">Person</p>
+						<h5>Saket Bikmal</h5>
+                        <p class="subtitle">TJHSST</p>
                         
 
                     </div>
@@ -118,25 +117,78 @@
 				<div class="wow bounceInUp" data-wow-delay="0.8s">
                 <div class="team boxed-grey">
                     <div class="inner">
+						<h5>Sachin Jain</h5>
+                        <p class="subtitle">TJHSST</p>
+                    </div>
+                </div>
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-3 col-md-3">
+				<div class="wow bounceInUp" data-wow-delay="0.8s">
+                <div class="team boxed-grey">
+                    <div class="inner">
 						<h5>Aneesh Kotnana</h5>
-                        <p class="subtitle">jQuery Ninja</p>
+                        <p class="subtitle">TJHSST</p>
+                    </div>
+                </div>
+				</div>
+            </div>
+        </div>
+		
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-50">
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3">
+				<div class="wow bounceInUp" data-wow-delay="0.2s">
+                <div class="team boxed-grey">
+                    <div class="inner">
+						<h5>Kamron</h5>
+                        <p class="subtitle">TJHSST</p>
+                    </div>
+                </div>
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-3 col-md-3">
+				<div class="wow bounceInUp" data-wow-delay="0.5s">
+                <div class="team boxed-grey">
+                    <div class="inner">
+						<h5>John Kim</h5>
+                        <p class="subtitle">TJHSST</p>
+                        
+
+                    </div>
+                </div>
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-3 col-md-3">
+				<div class="wow bounceInUp" data-wow-delay="0.8s">
+                <div class="team boxed-grey">
+                    <div class="inner">
+                        <p>We are the founders of this organization, Inspiring Ideas. What Inspiring Ideas hopes to accomplish is to improve
+						the technological education lacking in many areas and among many communities.
+						</p>
                         
                     </div>
                 </div>
 				</div>
             </div>
 			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow bounceInUp" data-wow-delay="1s">
+				<div class="wow bounceInUp" data-wow-delay="0.8s">
                 <div class="team boxed-grey">
                     <div class="inner">
-						<h5>Saket Bikmal</h5>
-                        <p class="subtitle">Typographer</p>
+                        <p>
+						Through the use of old computers, youtube videos, and online resources we hope to bring technological education to everyone.
+						</p>
                         
                     </div>
                 </div>
 				</div>
             </div>
-        </div>		
+        </div>
+		
 		</div>
 	</section>
 	<!-- /Section: about -->
@@ -253,14 +305,15 @@
 		</div>
     <div class="row">
         <div class="col-lg-8">
+		
             <div class="boxed-grey">
                 <form id="contact-form">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
-                                Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                Name (You Can Leave Blank)</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" />
                         </div>
                         <div class="form-group">
                             <label for="email">
@@ -270,15 +323,13 @@
                                 </span>
                                 <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
                         </div>
-                        <div class="form-group">
-                            <label for="subject">
+						<div class="form-group">
+                            <label for="email">
                                 Subject</label>
-                            <select id="subject" name="subject" class="form-control" required="required">
-                                <option value="na" selected="">Choose One:</option>
-                                <option value="service">General Customer Service</option>
-                                <option value="suggestions">Suggestions</option>
-                                <option value="product">I'd Like to Help!</option>
-                            </select>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="subject" class="form-control" id="subject" placeholder="Enter Subject" required="required" /></div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -290,7 +341,7 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                        <button type="submit" id="btnContactUs" onclick="sendTheMessage()">
                             Send Message</button>
                     </div>
                 </div>
@@ -300,17 +351,17 @@
 		
 		<div class="col-lg-4">
 			<div class="widget-contact">
-
+			
 				<address>
 				  <strong>Email</strong><br>
-				  <a href="mailto:#">InspiringIdeas.co@gmail.com</a>
+				  <a href="mailto:InspiringIdeas.co@gmail.com">InspiringIdeas.co@gmail.com</a>
 				</address>	
 				<address>
 				  <strong>We're on social networks</strong><br>
                        	<ul class="company-social">
                             <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                            <!--<li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
+                            <!--<li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>-->
                             <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                         </ul>	
 				</address>					
@@ -342,6 +393,11 @@
 
     <!-- Core JavaScript Files -->
     <script src="js/jquery.min.js"></script>
+	<script> 
+	function sendTheMessage() {
+	alert("Sorry, but this functionality is down due to technical issues. Try again later!\nIf you still want to email us, our email is InspiringIdeas.co@gmail.com");
+	}
+	</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>	
 	<script src="js/jquery.scrollTo.js"></script>
